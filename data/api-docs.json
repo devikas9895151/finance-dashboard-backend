@@ -1,7 +1,48 @@
 {
-  "collectionName": "Zorvyn API",
-  "requests": [
-    { "name": "Login", "url": "http://localhost:3000/api/auth/login", "method": "POST" },
-    { "name": "Get Records", "url": "http://localhost:3000/api/records", "method": "GET" }
+  "info": {
+    "name": "Zorvyn Finance API",
+    "description": "API Documentation for Financial Record Management"
+  },
+  "item": [
+    {
+      "name": "User Login",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:3000/api/auth/login",
+        "description": "Authenticates user and returns JWT token"
+      }
+    },
+    {
+      "name": "Dashboard Summary",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/dashboard/summary",
+        "description": "Returns total income, expenses, and balance"
+      }
+    },
+    {
+      "name": "Recent Transactions",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/dashboard/recent",
+        "description": "Returns the 10 most recent financial records"
+      }
+    },
+    {
+      "name": "Create Financial Record",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:3000/api/records",
+        "description": "Adds a new income or expense record"
+      }
+    },
+    {
+      "name": "Monthly Trends",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:3000/api/dashboard/trends",
+        "description": "Returns data for income vs expense charts"
+      }
+    }
   ]
 }
