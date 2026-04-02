@@ -1,0 +1,7 @@
+{
+  "collectionName": "Zorvyn API",
+  "requests": [
+    { "name": "Login", "url": "http://localhost:3000/api/auth/login", "method": "POST" },
+    { "name": "Get Records", "url": "http://localhost:3000/api/records", "method": "GET" }
+  ]
+}
